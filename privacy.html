@@ -4,7 +4,7 @@
 <body>
 <header>
   <a class="marca" href="index.html"><img src="icono.png" alt="">AL CORTE</a>
-  <nav><a href="index.html">Inicio · Home</a><a href="privacy.html">Política de privacidad · Privacy Policy</a><a href="terms.html">Términos del servicio · Terms of Service</a></nav>
+  <nav><a href="index.html">Inicio · Home</a><a href="descargar.html">Descargar · Download</a><a href="privacy.html">Política de privacidad · Privacy Policy</a><a href="terms.html">Términos del servicio · Terms of Service</a></nav>
 </header>
 <main>
 <h1>Política de privacidad · Privacy Policy</h1>
@@ -16,7 +16,7 @@
 <p>Esta política explica qué datos usa AL CORTE («la aplicación», «nosotros»), una aplicación de escritorio para Windows que convierte directos y videos largos en clips verticales y permite publicarlos en TikTok, YouTube Shorts e Instagram Reels.</p>
 
 <h3>1. Dónde se procesan tus datos</h3>
-<p>AL CORTE funciona en tu propia computadora. La grabación o descarga de videos, la transcripción, la detección de momentos, el recorte y el renderizado de clips se hacen localmente. No tenemos servidores que reciban tus videos ni tus datos de cuenta.</p>
+<p>AL CORTE funciona en tu propia computadora. La grabación o descarga de videos, la transcripción, la detección de momentos, el recorte y el renderizado de clips se hacen localmente. No tenemos servidores que reciban tus videos, tus clips ni tus datos de cuenta. La única excepción es el intercambiador de tokens de TikTok descrito en la sección 3.</p>
 
 <h3>2. Datos de TikTok que usamos</h3>
 <p>Cuando conectas tu cuenta con el inicio de sesión oficial de TikTok, AL CORTE solicita únicamente estos permisos:</p>
@@ -30,7 +30,9 @@
 <p>No leemos tus mensajes, tus videos existentes, tu lista de seguidores ni otros datos de tu cuenta.</p>
 
 <h3>3. Tokens y credenciales</h3>
-<p>Los tokens de acceso que entrega TikTok (y los de YouTube o Instagram, si los conectas) se guardan solo en tu computadora, en la carpeta <code>.alcorte_cache/redes</code> de la instalación de AL CORTE. No se envían a nosotros ni a terceros, salvo a la propia red social cuando la app hace una solicitud en tu nombre. Puedes desconectar una cuenta desde AL CORTE en cualquier momento: la app intenta revocar el permiso en la red y borra los tokens del disco. También puedes quitar el acceso desde la configuración de tu cuenta de TikTok.</p>
+<p>Los tokens de acceso que entrega TikTok (y los de YouTube o Instagram, si los conectas) se guardan solo en tu computadora, en la carpeta <code>.alcorte_cache/redes</code> de la instalación de AL CORTE. No se envían a nosotros ni a terceros, salvo a la propia red social cuando la app hace una solicitud en tu nombre, y lo indicado en el párrafo siguiente.</p>
+<p><b>Intercambiador de tokens de TikTok.</b> TikTok exige una clave secreta de la app para emitir y renovar tokens, y esa clave no puede ir dentro de un programa descargable. Por eso, cuando usas la app oficial de AL CORTE, el código de autorización de un solo uso, el verificador PKCE y, al renovar o desconectar, tu token de renovación o de acceso pasan por un pequeño servicio de AL CORTE (alojado en Cloudflare Workers) que agrega la clave secreta y los reenvía a TikTok; la respuesta de TikTok vuelve a tu PC por el mismo camino. Ese servicio no guarda, no registra y no analiza esos datos. Si conectas TikTok con credenciales de tu propia app de desarrollador, este servicio no se usa.</p>
+<p>Puedes desconectar una cuenta desde AL CORTE en cualquier momento: la app intenta revocar el permiso en la red y borra los tokens del disco. También puedes quitar el acceso desde la configuración de tu cuenta de TikTok.</p>
 
 <h3>4. Qué se envía a terceros</h3>
 <ul>
@@ -61,7 +63,7 @@
 <p>This policy explains what data AL CORTE ("the app", "we") uses. AL CORTE is a Windows desktop application that turns live streams and long videos into vertical clips and lets you publish them to TikTok, YouTube Shorts and Instagram Reels.</p>
 
 <h3>1. Where your data is processed</h3>
-<p>AL CORTE runs on your own computer. Recording or downloading videos, transcription, highlight detection, trimming and rendering all happen locally. We do not operate servers that receive your videos or account data.</p>
+<p>AL CORTE runs on your own computer. Recording or downloading videos, transcription, highlight detection, trimming and rendering all happen locally. We do not operate servers that receive your videos, clips or account data. The only exception is the TikTok token exchange described in section 3.</p>
 
 <h3>2. TikTok data we use</h3>
 <p>When you connect your account through TikTok's official login, AL CORTE requests only these scopes:</p>
@@ -75,7 +77,9 @@
 <p>We do not read your messages, your existing videos, your follower list or any other account data.</p>
 
 <h3>3. Tokens and credentials</h3>
-<p>Access tokens issued by TikTok (and by YouTube or Instagram, if you connect them) are stored only on your computer, in the <code>.alcorte_cache/redes</code> folder of your AL CORTE installation. They are not sent to us or to third parties, except to the social network itself when the app makes a request on your behalf. You can disconnect an account in AL CORTE at any time: the app tries to revoke access on the network and deletes the tokens from disk. You can also remove access from your TikTok account settings.</p>
+<p>Access tokens issued by TikTok (and by YouTube or Instagram, if you connect them) are stored only on your computer, in the <code>.alcorte_cache/redes</code> folder of your AL CORTE installation. They are not sent to us or to third parties, except to the social network itself when the app makes a request on your behalf, and as described in the next paragraph.</p>
+<p><b>TikTok token exchange.</b> TikTok requires an app secret to issue and refresh tokens, and that secret cannot be shipped inside a downloadable program. So when you use the official AL CORTE app, the single-use authorization code, the PKCE verifier and, when refreshing or disconnecting, your refresh or access token pass through a small AL CORTE service (hosted on Cloudflare Workers) that adds the app secret and forwards them to TikTok; TikTok's response returns to your PC the same way. That service does not store, log or analyze this data. If you connect TikTok with your own developer app credentials, this service is not used.</p>
+<p>You can disconnect an account in AL CORTE at any time: the app tries to revoke access on the network and deletes the tokens from disk. You can also remove access from your TikTok account settings.</p>
 
 <h3>4. What is sent to third parties</h3>
 <ul>
@@ -101,5 +105,5 @@
 <p>For privacy questions or requests: <a href="mailto:alcorteclips@gmail.com">alcorteclips@gmail.com</a>.</p>
 </section>
 </main>
-<footer>© 2026 AL CORTE · <a href="privacy.html">Política de privacidad / Privacy Policy</a> · <a href="terms.html">Términos del servicio / Terms of Service</a> · Contacto / Contact: <a href="mailto:alcorteclips@gmail.com">alcorteclips@gmail.com</a><br>AL CORTE no está afiliado, patrocinado ni respaldado por TikTok. · AL CORTE is not affiliated with, sponsored or endorsed by TikTok.</footer>
+<footer>© 2026 AL CORTE · <a href="descargar.html">Descargar / Download</a> · <a href="privacy.html">Política de privacidad / Privacy Policy</a> · <a href="terms.html">Términos del servicio / Terms of Service</a> · Contacto / Contact: <a href="mailto:alcorteclips@gmail.com">alcorteclips@gmail.com</a><br>AL CORTE no está afiliado, patrocinado ni respaldado por TikTok. · AL CORTE is not affiliated with, sponsored or endorsed by TikTok.</footer>
 </body></html>
