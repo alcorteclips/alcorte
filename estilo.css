@@ -32,3 +32,6 @@ td,th{border:1px solid var(--linea);padding:8px;text-align:left;vertical-align:t
 .rasgo b{color:var(--dorado)}
 ol.instalar li{margin:.45em 0}
 code{background:#222;border-radius:6px;padding:1px 6px;font-size:.92em}
+.novedades{list-style:none;padding:0;margin:18px 0;display:grid;gap:8px}
+.novedades li{background:var(--gris);border:1px solid var(--linea);border-left:3px solid var(--dorado);border-radius:10px;padding:10px 14px}
+.novedades li b{color:var(--dorado)}
